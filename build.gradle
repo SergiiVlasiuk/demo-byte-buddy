@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'org.vl.net.bytebuddy'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'net.bytebuddy', name: 'byte-buddy', version: '1.9.12'
+    compile group: 'net.bytebuddy', name: 'byte-buddy-agent', version: '1.9.12'
+}
